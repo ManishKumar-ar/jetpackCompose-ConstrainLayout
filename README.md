@@ -2,7 +2,7 @@ this is the constraint layout brief
 
 Constraint Layout is not present in the jetpack compose by default.
 we have to add a dependency -
-                             implementation ("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+implementation ("androidx.constraintlayout:constraintlayout-compose:1.0.1")
 
 we directly not use the constaint layout 
 step 1  - 
