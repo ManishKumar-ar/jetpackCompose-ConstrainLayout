@@ -14,27 +14,29 @@ we define our contrains in the ConstraintSet{}
 
 val constraints  = ConstraintSet { }
 
-ConstraintLayout: Use the ConstraintLayout composable to create a ConstraintLayout.
+ConstraintLayout:
+Use the ConstraintLayout composable to create a ConstraintLayout.
 Inside this composable, you'll define your child composables and specify constraints between them.
 
-ConstraintSet: Use the ConstraintSet class to define constraints between the child composables.
+ConstraintSet:
+Use the ConstraintSet class to define constraints between the child composables.
 You can create multiple instances of ConstraintSet to represent different states/layouts of your UI.
 
 
 step - 3
+
  val constraints  = ConstraintSet {
                 val greenBox =createRefFor("greenbox")
                 val redBox =createRefFor("redbox")
-   }
+  }
 
    here createRefFor are the predefined function in the constraintset and in the constraintset, we define our child composable and wehave to give an id --
    by using the createRefFor()
 
 
-
-  step -4
-   in Jetpack Compose, "constrain" refers to the process of specifying the positioning and alignment rules for child composables within 
-   the layout. When you apply constraints to a composable, you are defining how it should be positioned relative to other composables or to the parent layout.
+step - 4
+in Jetpack Compose, "constrain" refers to the process of specifying the positioning and alignment rules for child composables within the layout.
+when you apply constraints to a composable, you are defining how it should be positioned relative to other composables or to the parent layout.
 
 Constraints typically include rules like aligning the top, bottom, start (left), or end (right) edges of a composable to another composable or to the edges of the parent layout.
 These constraints help define the layout's structure and how its elements are arranged on the screen.
@@ -68,8 +70,7 @@ top.linkTo(), bottom.linkTo(), start.linkTo(), end.linkTo(), etc., to specify th
 step - 5
  ConstraintLayout (constraints, modifier= Modifier.fillMaxSize())
  {
-                
-    }
+ }
 
 here we use the constraint layout and in this we use our constraints that we made in the earlier by using their id's  - layoutID
 
@@ -89,8 +90,9 @@ here we use the constraint layout and in this we use our constraints that we mad
 
 
 step - 6
-setContent {
-            val constraints  = ConstraintSet {
+
+setContent{
+       val constraints  = ConstraintSet {
                 val greenBox = createRefFor("greenbox")
                 val redBox = createRefFor("redbox")
                 val blueBox = createRefFor("bluebox")
